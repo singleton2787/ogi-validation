@@ -20,7 +20,9 @@
         <h2>Proof 1: Stability Guarantee (Theorem 1)</h2>
         <p><strong>Claim:</strong> The dynamic weighting system maintains L2-norm stability with respect to the context vector $\mathbf{c}$.</p>
         <p>The plot below confirms the Lipschitz stability: the empirical change in the output distribution $\mathbf{\Phi}$ (Y-axis) is strictly bounded by the theoretical Lipschitz constant (red dashed line) multiplied by the input perturbation (X-axis).</p>
-        <img src="visualization/stability_plot.png" alt="Plot showing empirical stability versus theoretical Lipschitz bound.">
+        
+        <img src="Visualizations/stability_plot.png" alt="Plot showing empirical stability versus theoretical Lipschitz bound.">
+        
         <p><em>Script:</em> <code>1_Stability_Proof.py</code></p>
     </div>
 
@@ -28,7 +30,9 @@
         <h2>Proof 2: Computational Complexity Reduction (Theorems 2 & 3)</h2>
         <p><strong>Claim:</strong> Top-$K$ Gating reduces inter-module communication complexity from $O(N^2 \cdot d_m)$ to a practical $O(K^2 \cdot d_m + N \cdot d_{attn})$.</p>
         <p>The logarithmic plot below shows the quadratic cost of a **Full Mesh** protocol (red line) rapidly diverging from the near-linear cost of the **Top-K Gating** mechanism (blue line) as the number of modules ($N$) increases, validating the architectural feasibility of OGI.</p>
-        <img src="visualization/complexity_plot.png" alt="Log-log plot showing N-squared complexity versus N-plus-K-squared complexity.">
+        
+        <img src="Visualizations/complexity_plot.png" alt="Log-log plot showing N-squared complexity versus N-plus-K-squared complexity.">
+        
         <p><em>Script:</em> <code>2_Complexity_Proof.py</code></p>
     </div>
 
