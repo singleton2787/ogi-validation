@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OGI Framework: Mathematical Rigor Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h1 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .proof-section { margin-bottom: 40px; padding: 20px; border: 1px solid #eee; border-radius: 5px; }
+        img { max-width: 100%; height: auto; display: block; margin: 15px auto; border: 1px solid #ccc; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Addressing Mathematical Rigor in the Open General Intelligence Framework</h1>
+    <p>This page demonstrates the empirical validation of the core mathematical theorems presented in the paper, focusing on <strong>Stability Guarantees</strong> and <strong>Computational Efficiency</strong>.</p>
+    <p>View the full code and scripts on the <a href="https://github.com/YOUR_USERNAME/OGI-Rigor-Demo">GitHub Repository</a>.</p>
+
+    <div class="proof-section">
+        <h2>Proof 1: Stability Guarantee (Theorem 1)</h2>
+        <p><strong>Claim:</strong> The dynamic weighting system maintains L2-norm stability with respect to the context vector $\mathbf{c}$.</p>
+        <p>The plot below confirms the Lipschitz stability: the empirical change in the output distribution $\mathbf{\Phi}$ (Y-axis) is strictly bounded by the theoretical Lipschitz constant (red dashed line) multiplied by the input perturbation (X-axis).</p>
+        <img src="visualization/stability_plot.png" alt="Plot showing empirical stability versus theoretical Lipschitz bound.">
+        <p><em>Script:</em> <code>1_Stability_Proof.py</code></p>
+    </div>
+
+    <div class="proof-section">
+        <h2>Proof 2: Computational Complexity Reduction (Theorems 2 & 3)</h2>
+        <p><strong>Claim:</strong> Top-$K$ Gating reduces inter-module communication complexity from $O(N^2 \cdot d_m)$ to a practical $O(K^2 \cdot d_m + N \cdot d_{attn})$.</p>
+        <p>The logarithmic plot below shows the quadratic cost of a **Full Mesh** protocol (red line) rapidly diverging from the near-linear cost of the **Top-K Gating** mechanism (blue line) as the number of modules ($N$) increases, validating the architectural feasibility of OGI.</p>
+        <img src="visualization/complexity_plot.png" alt="Log-log plot showing N-squared complexity versus N-plus-K-squared complexity.">
+        <p><em>Script:</em> <code>2_Complexity_Proof.py</code></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Michael Singleton. Corresponding Author: michael.singleton@bakerstreetai.com</p>
+    </footer>
+</body>
+</html>
